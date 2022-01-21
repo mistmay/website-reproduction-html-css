@@ -1,0 +1,1119 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+nav {
+    box-sizing: border-box;
+    background-color: rgba(3, 42, 88, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7.87vh;
+    padding: 2.31vh 4.16vw 1.11vh 4.16vw;
+    color: white;
+    z-index: 2;
+}
+
+#logo {
+    padding-left: 16.41vw
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#nav-links a {
+    color: white;
+}
+
+.text-link {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 33px;
+}
+
+.text-link:hover {
+    cursor: pointer;
+    transition: .8s ease;
+    border-bottom: solid 3px white;
+}
+
+.logo-link {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-link:hover {
+    background-color: white;
+    transition: .8s ease;
+}
+
+.logo-link:hover>a>i {
+    color: blue;
+}
+
+#menu-side {
+    position: relative;
+}
+
+aside {
+    display: none;
+}
+
+#check-control {
+    display: none;
+}
+
+#check-control:checked~aside {
+    position: absolute;
+    width: 25vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 3;
+    top: -80%;
+    right: -335%;
+    padding: 4.5rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+#aside-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+aside label {
+    color: #032a58;
+    font-size: 24px;
+}
+
+aside p {
+    color: #18191d;
+    font-size: 15px;
+}
+
+.aside-link {
+    margin-bottom: 40px;
+}
+
+.aside-link:hover {
+    border-bottom: 2px solid #032a58;
+    transition: .8s ease;
+}
+
+.aside-link a {
+    color: #032a58;
+    font-size: 24px;
+}
+
+#aside-footer {
+    margin-top: 100px;
+}
+
+#aside-footer-link {
+    margin-left: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+#aside-footer-link a {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aside-footer-link a:hover {
+    color: white;
+    background-color: black;
+    transition: .8s ease;
+}
+
+#menu-side label:hover {
+    cursor: pointer;
+}
+
+#background-image {
+    margin-top: 7.87vh;
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/slide-3.jpg");
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    background-position: center;
+}
+
+#background-image>div {
+    width: 525px;
+    height: auto;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+#background-image span {
+    font-size: 16px;
+}
+
+#background-image h1 {
+    font-size: 60px;
+    color: #032A58;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 35px;
+}
+
+#background-image p {
+    margin-bottom: 35px;
+}
+
+#background-image a {
+    border: 1px solid black;
+}
+
+.button {
+    padding: 9px 34px;
+    background-color: transparent;
+    border-radius: 50px;
+}
+
+#background-image a:hover {
+    background-color: black;
+    color: white;
+    transition: .8s ease;
+}
+
+.standar-section {
+    text-align: center;
+    padding: 120px 20%;
+}
+
+.color {
+    background-color: #f6f6f6;
+}
+
+.standar-section h2 {
+    margin-bottom: 25px;
+}
+
+.section-container {
+    margin-top: 95px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#card-container {
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+    height: 25vh;
+    background-color: transparent;
+    perspective: 600px;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+    transition: all 0.8s ease;
+}
+
+.card-inner:hover {
+    transform: rotateX(180deg);
+    cursor: pointer;
+}
+
+.front {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    background-color: white;
+    padding: 4.63vh 1.82vw 6.48vh 1.82vw;
+}
+
+.back {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    color: white;
+    background-color: blue;
+    transform: rotateX(180deg);
+    padding: 50px 35px 70px 35px;
+    padding: 4.63vh 1.82vw 6.48vh 1.82vw;
+}
+
+.icons {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#grow {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/section-2.jpg");
+    background-position: center;
+}
+
+.background-section {
+    width: 100%;
+    height: 45vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-section p {
+    margin-bottom: 30px;
+}
+
+.background-section h2 {
+    margin-bottom: 50px;
+}
+
+.background-section a {
+    color: white;
+    border: 2px solid white;
+}
+
+.background-section a:hover {
+    color: black;
+    background-color: white;
+    transition: .8s ease;
+}
+
+#statistic-container {
+    gap: 60px;
+    text-align: left;
+}
+
+#statistic-container>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#statistic-container span {
+    font-size: 38px;
+    color: #032a58;
+}
+
+#statistic-container p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#photo-container {
+    gap: 25px;
+}
+
+.photo {
+    position: relative;
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.photo-name {
+    width: 70%;
+    position: absolute;
+    top: 85%;
+    left: 15%;
+    background-color: white;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.photo-name h5 {
+    color: #032a58;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.photo-name p {
+    font-size: 16px;
+}
+
+.photo:hover {
+    cursor: pointer;
+}
+
+.photo:hover>div {
+    color: white;
+    background-color: blue;
+    transition: .8s ease;
+}
+
+.photo:hover>div>h5 {
+    color: white;
+}
+
+#watch {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/video.jpg");
+    background-position: center;
+}
+
+#watch i {
+    margin-right: 10px;
+}
+
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+#project-links>a,
+#project-links {
+    font-size: 18px;
+}
+
+.grid-photo {
+    overflow: hidden;
+}
+
+.grid-photo>div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.hide span {
+    font-weight: 900 !important;
+    font-size: 70px !important;
+}
+
+.hide h6 {
+    font-size: 20px;
+}
+
+.hide p {
+    font-size: 12px;
+    line-height: normal;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "chair note keyboard keyboard"
+        "chair plant keyboard keyboard"
+        "desktop desktop blackboard blackboard"
+        "desktop desktop paper candy";
+    height: 102.59vh;
+    width: 100%;
+}
+
+#chair {
+    grid-area: chair;
+}
+
+#chair>div {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/work-1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#chair>div:hover {
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
+        url('https://megaone.acrothemes.com/classic-business/img/work-1.jpg');
+    background-position: center;
+}
+
+#note {
+    grid-area: note;
+}
+
+#note>div {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/work-2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#note>div:hover {
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
+        url('https://megaone.acrothemes.com/classic-business/img/work-2.jpg');
+    background-position: center;
+}
+
+#keyboard {
+    grid-area: keyboard;
+}
+
+#keyboard>div {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/work-4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#keyboard>div:hover {
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
+        url('https://megaone.acrothemes.com/classic-business/img/work-4.jpg');
+    background-position: center;
+}
+
+#plant {
+    grid-area: plant;
+}
+
+#plant>div {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/work-3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#plant>div:hover {
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
+        url('https://megaone.acrothemes.com/classic-business/img/work-3.jpg');
+    background-position: center;
+}
+
+#desktop {
+    grid-area: desktop;
+}
+
+#desktop>div {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/work-5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#desktop>div:hover {
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
+        url('https://megaone.acrothemes.com/classic-business/img/work-5.jpg');
+    background-position: center;
+}
+
+#blackboard {
+    grid-area: blackboard;
+}
+
+#blackboard>div {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/work-6.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#blackboard>div:hover {
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
+        url('https://megaone.acrothemes.com/classic-business/img/work-6.jpg');
+    background-position: center;
+}
+
+#paper {
+    grid-area: paper;
+}
+
+#paper>div {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/work-7.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#paper>div:hover {
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
+        url('https://megaone.acrothemes.com/classic-business/img/work-7.jpg');
+    background-position: center;
+}
+
+#candy {
+    grid-area: candy;
+}
+
+#candy>div {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/work-8.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#candy>div:hover {
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
+        url('https://megaone.acrothemes.com/classic-business/img/work-8.jpg');
+    background-position: center;
+}
+
+.grid-photo>div:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+.grid-photo>div:hover>div {
+    display: block;
+    position: absolute;
+    color: white;
+    width: 70%;
+    top: 30%;
+    left: 15%;
+    background-color: transparent;
+    margin: 0 auto;
+}
+
+#button-grid {
+    margin-top: 25px;
+}
+
+#button-grid>a {
+    border: 2px solid black;
+}
+
+#button-grid>a:hover {
+    background-color: #032a58;
+    border-color: #032a58;
+    color: white;
+    transition: .8s ease;
+}
+
+#maecenas {
+    background-image: url("https://megaone.acrothemes.com/classic-business/img/quote.jpg");
+    background-position: center;
+    color: #18191d;
+    font-size: 70px;
+    width: 100%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#maecenas>div {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#maecenas>div>span {
+    margin: 15px 0;
+    text-align: center;
+    font-size: 38.1px;
+}
+
+#left {
+    align-self: flex-start;
+}
+
+#right {
+    align-self: flex-end;
+}
+
+#pricing-container {
+    gap: 25px;
+}
+
+.table {
+    width: 30%;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+
+.table-title {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    padding: 30px;
+}
+
+#business>.table-title {
+    background-color: #032a58;
+}
+
+.table-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.table-inner span {
+    font-size: 36px;
+}
+
+.table-inner p {
+    font-size: 15px;
+}
+
+.table-inner a {
+    border: 2px solid black;
+}
+
+.table-inner a:hover {
+    background-color: black;
+    color: white;
+    transition: .8s ease;
+}
+
+#business>.table-inner a:hover {
+    background-color: #032a58;
+}
+
+#business {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.15);
+}
+
+.work-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.work-container p {
+    font-size: 16px;
+    margin: 10px 0 55px 0;
+}
+
+.work-container a {
+    border: 2px solid black;
+}
+
+.work-container a:hover {
+    background-color: #032a58;
+    color: white;
+    transition: .8s ease;
+}
+
+#reverse {
+    align-items: flex-end;
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.work-container img {
+    width: 80%;
+    padding-left: 5.57vw;
+    padding-bottom: 20px;
+}
+
+#reverse img {
+    padding-left: 0;
+    padding-right: 107px;
+}
+
+.work-container>div {
+    width: 50%;
+}
+
+#form {
+    width: 60%;
+    text-align: left;
+}
+
+#contact {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 35px;
+    text-align: left;
+}
+
+#inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#inputs>div {
+    width: 46%;
+}
+
+input {
+    box-sizing: border-box;
+    margin: 20px 0;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 20px 0;
+    height: auto;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    text-align: left;
+}
+
+button:hover {
+    background-color: #032a58;
+    color: white;
+    transition: .8s ease;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-details i {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.contact-details h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #032a58;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#contact-text>p {
+    font-size: 14px;
+}
+
+footer {
+    padding: 120px 0;
+    background-color: #f6f6f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+footer a {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+footer a:hover {
+    color: white;
+    background-color: lightskyblue;
+    transition: .8s ease;
+}
+
+footer p {
+    font-size: 13px;
+    color: #888888;
+}
+
+#grid-flex {
+    flex-direction: column;
+    display: none;
+}
+
+#grid-flex>div,
+#grid-flex img {
+    width: 100%;
+}
+
+#grid-flex>div:hover {
+    transform: scale(1.01);
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+#grid-flex>div:hover>div {
+    display: block;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    margin: 0 auto;
+    background: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1300px) {
+    #logo {
+        padding-left: 0;
+    }
+
+    #statistic-container {
+        gap: 10px;
+    }
+
+    #maecenas>div {
+        width: 90%;
+    }
+
+    .work-container h2 {
+        font-size: 35px;
+    }
+
+    #form h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .space-between {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #statistic-container>div {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #statistic-container {
+        gap: 60px;
+    }
+
+    #photo-container {
+        gap: 60px;
+    }
+
+    #grid {
+        display: none;
+    }
+
+    #grid-flex {
+        display: flex;
+    }
+
+    .table {
+        width: 100%;
+    }
+
+    #business {
+        transform: none;
+    }
+
+    .work-container {
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin-top: 0;
+        gap: 50px;
+    }
+
+    .work-container>div {
+        width: 100%;
+    }
+
+    .work-container img {
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    #reverse {
+        margin-top: 95px;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #contact {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    #contact-section>div {
+        margin: 0;
+    }
+}
+
+@media (max-width: 850px) {
+    #nav-links {
+        display: none;
+    }
+
+    #background-image {
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #background-image>div {
+        position: static;
+        text-align: center;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    #maecenas>div>span {
+        font-size: 30px;
+    }
+
+    aside {
+        width: 90vw !important;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        line-height: normal;
+    }
+
+    #background-image h1 {
+        font-size: 50px;
+    }
+
+    p {
+        line-height: normal;
+    }
+
+    #left,
+    #right {
+        display: none;
+    }
+
+    #maecenas::before,
+    #maecenas::after {
+        content: '"';
+    }
+
+    #maecenas>div>span {
+        margin: 0;
+    }
+
+    #form {
+        text-align: center;
+    }
+
+    #inputs {
+        flex-direction: column;
+    }
+
+    #inputs>div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        font-size: 35px;
+    }
+}
